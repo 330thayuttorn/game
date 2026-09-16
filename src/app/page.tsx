@@ -1,4 +1,4 @@
-import BandCard from "@/components/BandCard";
+import BandExplorer from "@/components/BandExplorer";
 import { mockBands } from "@/data/bands";
 
 export default function FavoriteBandsPage() {
@@ -7,11 +7,7 @@ export default function FavoriteBandsPage() {
       <h1>the bands that i like</h1>
       <h2>วงดนตรีทีอันโตข้าชอบมากๆ</h2>
 
-      <section className="band-grid">
-       {mockBands.map((band) => (
-          <BandCard key={band.id} band={band} />
-        ))}
-      </section>
+      <BandExplorer bands={mockBands} />
     </main>
   );
 }
