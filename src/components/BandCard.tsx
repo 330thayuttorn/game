@@ -19,7 +19,7 @@ export default function BandCard({
   return (
     <article className="group bg-neutral-900 border border-neutral-800 hover:border-neutral-200 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 p-5 flex flex-col justify-between">
       <div>
-        {/* 🛠️ ปรับขนาดรูปปกให้ใหญ่ขึ้นเป็น h-60 (240px) */}
+        
         <div className="relative w-full h-60 overflow-hidden rounded-xl bg-neutral-950 mb-4">
           <Image
             src={band.imageUrl}
@@ -50,7 +50,7 @@ export default function BandCard({
             {band.members.map((member) => (
               <li key={member.id} className="flex items-center justify-between text-xs">
                 <div className="flex items-center gap-3">
-                  {/* 🛠️ ปรับขนาดรูปสมาชิกให้ใหญ่ขึ้นเป็น 56x56px (w-14 h-14) */}
+                  
                   {member.imageUrl && (
                     <Image
                       src={member.imageUrl}
@@ -68,7 +68,7 @@ export default function BandCard({
           </ul>
         </div>
 
-        {/* ปุ่มติดตาม และ ปุ่ม Like */}
+        
         <div className="mt-5 pt-4 border-t border-neutral-800 flex items-center gap-2">
           <button
             type="button"
